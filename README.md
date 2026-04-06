@@ -18,7 +18,7 @@ This is a **local-only style skill**. It does not install code, call external AP
 - clearer progress updates
 - better follow-through
 - cleaner done/blocked/next communication
-- stronger bias toward end-to-end delivery for published things, not stopping at local edits unless the user says draft-only or local-only
+- stronger follow-through and clearer completion behavior
 
 ## What it does not do
 
@@ -31,10 +31,6 @@ This is a **local-only style skill**. It does not install code, call external AP
 
 You want OpenClaw to feel sharper, more proactive, and less chatty without changing the base agent or model.
 
-## publishing expectation
+## note
 
-when the user asks to update something already published, default to end-to-end delivery unless they say otherwise:
-- make the local change
-- update github if relevant
-- update the live distribution surface, like clawhub
-- confirm it is live
+this skill focuses on local behavior and tone. broader publishing or deployment rules should live in your main agent instructions, not inside this skill.
